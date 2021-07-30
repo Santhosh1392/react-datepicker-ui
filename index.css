@@ -1,0 +1,211 @@
+.date-picker-container table {
+  border-collapse: collapse; }
+
+.date-picker-container .datepicker-navigator-table {
+  width: 315px; }
+  .date-picker-container .datepicker-navigator-table .datepicker-month-navigator {
+    vertical-align: middle; }
+    .date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.left-arrow,
+    .date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.right-arrow {
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer; }
+      .date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.left-arrow svg,
+      .date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.right-arrow svg {
+        width: 20px;
+        height: 20px;
+        fill: #717272;
+        margin-top: 5px; }
+    .date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.month-name {
+      width: 200px;
+      height: 45px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer; }
+
+.date-picker-container .datepicker-table {
+  width: 315px; }
+  .date-picker-container .datepicker-table .datepicker-table-header {
+    width: 315px; }
+    .date-picker-container .datepicker-table .datepicker-table-header tr {
+      border: 1px solid #ddd;
+      border-top: none; }
+      .date-picker-container .datepicker-table .datepicker-table-header tr th {
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        font-size: 14px; }
+  .date-picker-container .datepicker-table tr td.date-picker-monthday {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #444; }
+    .date-picker-container .datepicker-table tr td.date-picker-monthday:hover {
+      background: #ddd; }
+  .date-picker-container .datepicker-table tr td.date-picker-non-month-day {
+    border: none;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    pointer-events: none; }
+  .date-picker-container .datepicker-table tr td.disabledDate {
+    cursor: not-allowed;
+    opacity: 0.5; }
+  .date-picker-container .datepicker-table tr td.selectedDate {
+    font-weight: bold;
+    background: #00a699;
+    color: #fff;
+    font-weight: bold;
+    border-color: #00a699; }
+    .date-picker-container .datepicker-table tr td.selectedDate:hover {
+      background: #00a699; }
+
+.date-picker-container .floating-datepicker {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  margin-top: 15px; }
+  .date-picker-container .floating-datepicker::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 16px solid #aaa;
+    border-left: 10px solid transparent; }
+  .date-picker-container .floating-datepicker::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    border-top: 11px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 16px solid #fff;
+    border-left: 10px solid transparent; }
+
+.month-picker-months-table {
+  width: 315px; }
+  .month-picker-months-table .month-picker-row td.month-picker-month-cell {
+    text-align: center;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-top: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #717272; }
+    .month-picker-months-table .month-picker-row td.month-picker-month-cell:hover {
+      background: #ddd; }
+  .month-picker-months-table .month-picker-row td.selectedMonth {
+    font-weight: bold;
+    background: #00a699;
+    color: #fff;
+    font-weight: bold; }
+    .month-picker-months-table .month-picker-row td.selectedMonth:hover {
+      background: #00a699; }
+  .month-picker-months-table .monthpicker-navigator-table {
+    width: 315px; }
+  .month-picker-months-table .monthpicker-month-navigator td.left-arrow {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: none; }
+  .month-picker-months-table .monthpicker-month-navigator td.right-arrow {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: none; }
+  .month-picker-months-table .monthpicker-month-navigator td.month-name {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: none; }
+
+.year-picker-months-table {
+  width: 315px; }
+  .year-picker-months-table .year-picker-row td.year-picker-month-cell {
+    text-align: center;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-top: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #717272; }
+    .year-picker-months-table .year-picker-row td.year-picker-month-cell:hover {
+      background: #ddd; }
+  .year-picker-months-table .year-picker-row td.selectedMonth {
+    font-weight: bold;
+    background: #00a699;
+    color: #fff;
+    font-weight: bold; }
+    .year-picker-months-table .year-picker-row td.selectedMonth:hover {
+      background: #00a699; }
+  .year-picker-months-table .yearpicker-navigator-table {
+    width: 315px; }
+    .year-picker-months-table .yearpicker-navigator-table .yearpicker-month-navigator td.left-arrow {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer;
+      border-bottom: none; }
+    .year-picker-months-table .yearpicker-navigator-table .yearpicker-month-navigator td.right-arrow {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer;
+      border-bottom: none; }
+    .year-picker-months-table .yearpicker-navigator-table .yearpicker-month-navigator td.month-name {
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer;
+      border-bottom: none; }
+
+.react-datepicker-input-conatiner {
+  position: relative;
+  max-width: 315px;
+  box-sizing: border-box; }
+  .react-datepicker-input-conatiner * {
+    box-sizing: border-box;
+    user-select: none; }
+  .react-datepicker-input-conatiner .datepicker-input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 0px;
+    outline: none;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif; }
+  .react-datepicker-input-conatiner .datepicker-calendar-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px; }

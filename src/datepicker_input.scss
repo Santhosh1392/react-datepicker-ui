@@ -1,0 +1,41 @@
+.react-datepicker-input-conatiner {
+  position: relative;
+  max-width: 315px;
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  .datepicker-input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 0px;
+    outline: none;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .datepicker-calendar-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .clear-calendar-icon {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    -webkit-text-stroke: 2px #fff;
+  }
+}

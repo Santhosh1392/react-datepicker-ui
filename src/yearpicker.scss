@@ -1,0 +1,60 @@
+.year-picker-months-table {
+  width: 315px;
+  .year-picker-row {
+    td.year-picker-month-cell {
+      text-align: center;
+      height: 50px;
+      border: 1px solid #ddd;
+      border-top: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: #717272;
+      &:hover {
+        background: #ddd;
+      }
+    }
+
+    td.selectedMonth {
+      font-weight: bold;
+      background: rgb(0, 166, 153);
+      color: #fff;
+      font-weight: bold;
+
+      &:hover {
+        background: rgb(0, 166, 153);
+      }
+    }
+  }
+  .yearpicker-navigator-table {
+    width: 315px;
+    .yearpicker-month-navigator {
+      td.left-arrow {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: none;
+      }
+      td.right-arrow {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: none;
+      }
+      td.month-name {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: none;
+      }
+    }
+  } 
+}

@@ -1,0 +1,49 @@
+{
+  "name": "react-datepicker-ui",
+  "version": "1.0.0",
+  "description": "Datepicker Component for React",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santhosh1392/react-datepicker-ui.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "datepicker",
+    "calendar",
+    "date",
+    "react-datepicker",
+    "react-dates",
+    "dates",
+    "datepicker-input"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santhosh1392/react-datepicker-ui/issues"
+  },
+  "homepage": "https://github.com/Santhosh1392/react-datepicker-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.2",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
+    "rollup": "^2.55.1",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "peerDependencies": {
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
