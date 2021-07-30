@@ -12,7 +12,7 @@ const OUTPUT_NAME = 'datepicker';
 const GLOBALS = {
   react: 'React',
   'react-dom': 'ReactDOM',
-  'prop-types': 'PropTypes',
+  'moment': 'moment',
 };
 
 const PLUGINS = [
@@ -27,7 +27,7 @@ const PLUGINS = [
     resolveOnly: [
       /^(?!react$)/,
       /^(?!react-dom$)/,
-      /^(?!prop-types)/,
+      /^(?!moment)/,
     ],
   }),
   commonjs(),
