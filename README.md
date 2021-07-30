@@ -6,15 +6,14 @@ Date picker component for React
 
 Make sure you have [Node.js](http://nodejs.org/) and NPM installed.
 
-Dependencies for the packge is [moment]
 ```sh
-npm install react-datepicker-ui moment
+npm install react-datepicker-ui
 ```
 
 Or
 
 ```sh
-yarn add react-datepicker-ui moment
+yarn add react-datepicker-ui
 ```
 
 ## How to Use

@@ -37,7 +37,7 @@ const PLUGINS = [
 const EXTERNAL = [
   'react',
   'react-dom',
-  'prop-types',
+  'moment',
 ];
 
 // https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers
