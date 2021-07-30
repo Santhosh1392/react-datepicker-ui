@@ -67,7 +67,7 @@ const DatePickerDemo = () => {
 
 ## Available PropTypes
 
-| Prop Name    | Type     | Default Value Description                                               |
+| Prop Name    | Type     | Default Value | Description                                             |
 | ------------ | -------- | ------------- | ------------------------------------------------------- |
 | defaultValue | String   | ''            | Initial Value for datepicker                            |
 | format       | String   | 'MM/DD/YYYY'  | Format of the date to be returned                       |
