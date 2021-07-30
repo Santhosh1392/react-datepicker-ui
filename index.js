@@ -1,5 +1,23 @@
 'use strict';
 
+
+
+function ___$insertStyle(css) {
+  if (!css) {
+    return;
+  }
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  var style = document.createElement('style');
+
+  style.setAttribute('type', 'text/css');
+  style.innerHTML = css;
+  document.head.appendChild(style);
+  return css;
+}
+
 var React = require('react');
 var moment = require('moment');
 
@@ -409,6 +427,12 @@ var YearPicker = function YearPicker(_ref) {
   }))));
 };
 
+___$insertStyle(".date-picker-container table {\n  border-collapse: collapse;\n}\n.date-picker-container .datepicker-navigator-table {\n  width: 315px;\n}\n.date-picker-container .datepicker-navigator-table .datepicker-month-navigator {\n  vertical-align: middle;\n}\n.date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.left-arrow,\n.date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.right-arrow {\n  width: 45px;\n  height: 45px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n}\n.date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.left-arrow svg,\n.date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.right-arrow svg {\n  width: 20px;\n  height: 20px;\n  fill: #717272;\n  margin-top: 5px;\n}\n.date-picker-container .datepicker-navigator-table .datepicker-month-navigator td.month-name {\n  width: 200px;\n  height: 45px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n}\n.date-picker-container .datepicker-table {\n  width: 315px;\n}\n.date-picker-container .datepicker-table .datepicker-table-header {\n  width: 315px;\n}\n.date-picker-container .datepicker-table .datepicker-table-header tr {\n  border: 1px solid #ddd;\n  border-top: none;\n}\n.date-picker-container .datepicker-table .datepicker-table-header tr th {\n  width: 45px;\n  height: 45px;\n  text-align: center;\n  font-size: 14px;\n}\n.date-picker-container .datepicker-table tr td.date-picker-monthday {\n  width: 45px;\n  height: 45px;\n  text-align: center;\n  border: 1px solid #ddd;\n  box-sizing: border-box;\n  font-size: 14px;\n  cursor: pointer;\n  font-weight: bold;\n  color: #444;\n}\n.date-picker-container .datepicker-table tr td.date-picker-monthday:hover {\n  background: #ddd;\n}\n.date-picker-container .datepicker-table tr td.date-picker-non-month-day {\n  border: none;\n  width: 45px;\n  height: 45px;\n  text-align: center;\n  pointer-events: none;\n}\n.date-picker-container .datepicker-table tr td.disabledDate {\n  cursor: not-allowed;\n  opacity: 0.5;\n}\n.date-picker-container .datepicker-table tr td.selectedDate {\n  font-weight: bold;\n  background: #00a699;\n  color: #fff;\n  font-weight: bold;\n  border-color: #00a699;\n}\n.date-picker-container .datepicker-table tr td.selectedDate:hover {\n  background: #00a699;\n}\n.date-picker-container .floating-datepicker {\n  position: absolute;\n  z-index: 1;\n  background-color: #fff;\n  margin-top: 15px;\n}\n.date-picker-container .floating-datepicker::before {\n  content: \"\";\n  position: absolute;\n  top: -25px;\n  left: 10px;\n  border-top: 10px solid transparent;\n  border-right: 10px solid transparent;\n  border-bottom: 16px solid #aaa;\n  border-left: 10px solid transparent;\n}\n.date-picker-container .floating-datepicker::after {\n  content: \"\";\n  position: absolute;\n  top: -25px;\n  left: 10px;\n  border-top: 11px solid transparent;\n  border-right: 10px solid transparent;\n  border-bottom: 16px solid #fff;\n  border-left: 10px solid transparent;\n}");
+
+___$insertStyle(".month-picker-months-table {\n  width: 315px;\n}\n.month-picker-months-table .month-picker-row td.month-picker-month-cell {\n  text-align: center;\n  height: 50px;\n  border: 1px solid #ddd;\n  border-top: none;\n  cursor: pointer;\n  font-weight: bold;\n  color: #717272;\n}\n.month-picker-months-table .month-picker-row td.month-picker-month-cell:hover {\n  background: #ddd;\n}\n.month-picker-months-table .month-picker-row td.selectedMonth {\n  font-weight: bold;\n  background: #00a699;\n  color: #fff;\n  font-weight: bold;\n}\n.month-picker-months-table .month-picker-row td.selectedMonth:hover {\n  background: #00a699;\n}\n.month-picker-months-table .monthpicker-navigator-table {\n  width: 315px;\n}\n.month-picker-months-table .monthpicker-month-navigator td.left-arrow {\n  width: 40px;\n  height: 40px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n  border-bottom: none;\n}\n.month-picker-months-table .monthpicker-month-navigator td.right-arrow {\n  width: 40px;\n  height: 40px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n  border-bottom: none;\n}\n.month-picker-months-table .monthpicker-month-navigator td.month-name {\n  width: 200px;\n  height: 40px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n  border-bottom: none;\n}");
+
+___$insertStyle(".year-picker-months-table {\n  width: 315px;\n}\n.year-picker-months-table .year-picker-row td.year-picker-month-cell {\n  text-align: center;\n  height: 50px;\n  border: 1px solid #ddd;\n  border-top: none;\n  cursor: pointer;\n  font-weight: bold;\n  color: #717272;\n}\n.year-picker-months-table .year-picker-row td.year-picker-month-cell:hover {\n  background: #ddd;\n}\n.year-picker-months-table .year-picker-row td.selectedMonth {\n  font-weight: bold;\n  background: #00a699;\n  color: #fff;\n  font-weight: bold;\n}\n.year-picker-months-table .year-picker-row td.selectedMonth:hover {\n  background: #00a699;\n}\n.year-picker-months-table .yearpicker-navigator-table {\n  width: 315px;\n}\n.year-picker-months-table .yearpicker-navigator-table .yearpicker-month-navigator td.left-arrow {\n  width: 40px;\n  height: 40px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n  border-bottom: none;\n}\n.year-picker-months-table .yearpicker-navigator-table .yearpicker-month-navigator td.right-arrow {\n  width: 40px;\n  height: 40px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n  border-bottom: none;\n}\n.year-picker-months-table .yearpicker-navigator-table .yearpicker-month-navigator td.month-name {\n  width: 200px;\n  height: 40px;\n  text-align: center;\n  border: 1px solid #ddd;\n  font-weight: bold;\n  cursor: pointer;\n  border-bottom: none;\n}");
+
 var DayPickerHeader = function DayPickerHeader() {
   return /*#__PURE__*/React__default['default'].createElement("thead", {
     className: "datepicker-table-header"
@@ -581,17 +605,22 @@ var DatePicker = function DatePicker(_ref) {
   }, getCurrentView());
 };
 
+___$insertStyle(".react-datepicker-input-conatiner {\n  position: relative;\n  max-width: 315px;\n  box-sizing: border-box;\n}\n.react-datepicker-input-conatiner * {\n  box-sizing: border-box;\n  user-select: none;\n}\n.react-datepicker-input-conatiner .datepicker-input {\n  width: 100%;\n  border: 1px solid #ddd;\n  padding: 8px 15px;\n  border-radius: 0px;\n  outline: none;\n  height: 45px;\n  font-size: 16px;\n  font-weight: 600;\n  font-family: \"Nunito\", sans-serif;\n}\n.react-datepicker-input-conatiner .datepicker-calendar-icon {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  color: #333;\n  cursor: pointer;\n  font-size: 24px;\n}\n.react-datepicker-input-conatiner .clear-calendar-icon {\n  position: absolute;\n  top: 10px;\n  right: 40px;\n  color: #333;\n  cursor: pointer;\n  font-size: 24px;\n  -webkit-text-stroke: 2px #fff;\n}");
+
 var DatePickerInput = function DatePickerInput(_ref) {
   var format = _ref.format,
       minDate = _ref.minDate,
-      maxDate = _ref.maxDate;
+      maxDate = _ref.maxDate,
+      onChange = _ref.onChange,
+      placeholder = _ref.placeholder,
+      defaultValue = _ref.defaultValue;
 
   var _useState = React.useState(false),
       _useState2 = _slicedToArray(_useState, 2),
       showDatePicker = _useState2[0],
       setShowDatePicker = _useState2[1];
 
-  var _useState3 = React.useState(null),
+  var _useState3 = React.useState(defaultValue || ''),
       _useState4 = _slicedToArray(_useState3, 2),
       date = _useState4[0],
       setDate = _useState4[1];
@@ -603,8 +632,6 @@ var DatePickerInput = function DatePickerInput(_ref) {
       return !prevState;
     });
   };
-
-  var handleOnChange = function handleOnChange() {};
 
   React.useEffect(function () {
     document.addEventListener("mousedown", closeDatePickerOnOutsideClick); // return function to be called when unmounted
@@ -625,14 +652,30 @@ var DatePickerInput = function DatePickerInput(_ref) {
     setShowDatePicker(false);
   };
 
+  var clearDateInput = function clearDateInput() {
+    setDate('');
+  };
+
+  React.useEffect(function () {
+    if (onChange instanceof Function) {
+      onChange({
+        dateString: date,
+        dateObject: moment__default['default'](date).toDate()
+      });
+    }
+  }, [date]);
   return /*#__PURE__*/React__default['default'].createElement("div", {
     ref: datePickerRef,
     className: "react-datepicker-input-conatiner"
   }, /*#__PURE__*/React__default['default'].createElement("input", {
     className: "datepicker-input",
     onClick: openDatePicker,
-    onChange: handleOnChange,
-    value: date
+    value: date,
+    placeholder: placeholder,
+    readOnly: true
+  }), date && /*#__PURE__*/React__default['default'].createElement("i", {
+    className: "fa fa-times clear-calendar-icon",
+    onClick: clearDateInput
   }), /*#__PURE__*/React__default['default'].createElement("i", {
     className: "fa fa-calendar datepicker-calendar-icon",
     onClick: openDatePicker
@@ -648,7 +691,9 @@ var DatePickerInput = function DatePickerInput(_ref) {
 
 DatePickerInput.defaultProps = {
   format: "MM/DD/YYYY",
-  minDate: null
+  minDate: null,
+  maxDate: null,
+  placeholder: 'MM/DD/YYYY'
 };
 
 module.exports = DatePickerInput;

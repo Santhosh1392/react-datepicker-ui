@@ -2,6 +2,7 @@ import babel from '@rollup/plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
+import sass from 'rollup-plugin-sass'
 
 import pkg from './package.json';
 
@@ -29,7 +30,8 @@ const PLUGINS = [
       /^(?!prop-types)/,
     ],
   }),
-  commonjs()
+  commonjs(),
+  sass({ insert: true }),
 ];
 
 const EXTERNAL = [
@@ -55,6 +57,7 @@ const config = OUTPUT_DATA.map(({ file, format }) => ({
     format,
     name: OUTPUT_NAME,
     globals: GLOBALS,
+    exports: 'auto'
   },
   external: ['cjs', 'es'].includes(format) ? CJS_AND_ES_EXTERNALS : EXTERNAL,
   plugins: PLUGINS,
